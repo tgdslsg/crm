@@ -1,0 +1,12 @@
+.logo{
+    height: 60px;
+    background-color: #0c0c0c;
+    text-align:center;
+}
+
+.logo .title{
+    color:#e1e1e1;
+    font-size:20px;
+    height:60px;
+    line-height:60px;
+}
