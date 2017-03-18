@@ -8,7 +8,7 @@
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini">CRM</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Kaisheng</b>CRM</span>
+        <span class="logo-lg"><b>SUS</b>CRM</span>
     </a>
 
     <!-- Header Navbar -->
