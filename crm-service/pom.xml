@@ -17,6 +17,11 @@
     </parent>
 
     <dependencies>
+        <dependency>
+            <groupId>com.sus</groupId>
+            <artifactId>crm-dao</artifactId>
+            <version>1.0</version>
+        </dependency>
         <!--MySQL-->
         <dependency>
             <groupId>mysql</groupId>

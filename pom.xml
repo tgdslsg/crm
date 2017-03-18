@@ -21,10 +21,11 @@
     </properties>
 
     <modules>
-        <module>crm-pojo/</module>
+        <module>crm-pojo</module>
         <module>crm-service</module>
         <module>crm-util</module>
         <module>crm-web</module>
+        <module>crm-dao</module>
     </modules>
 
     <dependencyManagement>
