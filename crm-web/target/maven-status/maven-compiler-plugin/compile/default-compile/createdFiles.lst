@@ -1,0 +1,5 @@
+com\sus\controller\UserController.class
+com\sus\controller\HomeController.class
+com\sus\controller\AdminController.class
+com\sus\controller\DocumentController.class
+com\sus\controller\LoginController.class
