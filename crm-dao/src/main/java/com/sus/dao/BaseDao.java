@@ -4,17 +4,17 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Order;
+import org.hibernate.criterion.Projections;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
+
 /**
  * Created by Administrator on 2017/3/18.
  */
-@Repository
 public class BaseDao<T,PK extends Serializable> {
 
     @Autowired
@@ -33,8 +33,13 @@ public class BaseDao<T,PK extends Serializable> {
        return (T)getSession().get(clazz,id);
     }
 
-    public void save(T entity) {
+    public void saveOrUpdate(T entity) {
+
         getSession().saveOrUpdate(entity);
+    }
+
+    public Long count() {
+        return (Long) getSession().createCriteria(clazz).setProjection(Projections.rowCount()).uniqueResult();
     }
 
     public List<T> findAll(String propertyName,String orderType) {
@@ -55,6 +60,7 @@ public class BaseDao<T,PK extends Serializable> {
     public void delete(PK id) {
         getSession().delete(findById(id));
     }
+
 
 
 }

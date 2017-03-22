@@ -32,7 +32,6 @@ http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springfr
         </property>
     </bean>
 
-
     <!--事务管理器-->
     <bean id="transactionManager"
           class="org.springframework.orm.hibernate4.HibernateTransactionManager">

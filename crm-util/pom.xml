@@ -15,5 +15,12 @@
         <version>1.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
+    <dependencies>
+        <dependency>
+            <groupId>com.sus</groupId>
+            <artifactId>crm-pojo</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
 
 </project>
